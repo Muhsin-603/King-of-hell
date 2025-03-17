@@ -1,0 +1,50 @@
+#include<stdio.h>
+void swap(int *x,int *y)
+{
+int temp;
+temp=*x;
+*x=*y;
+*y=temp;
+}//To swap the adjascent items
+
+void scan(int arr[],int n)
+{
+int arr[n];
+for(int i=0;i<n;i++)
+{
+printf("Enter Array element : ");
+scanf("%d",&arr[i]);
+}//for scanning array
+
+void print(arr[],n)
+{
+for(int i=0;i<n;i++)
+{
+printf("%d\t",a[i]);
+}
+}//For printing array
+
+void bs(arr[],n)
+int arr[];
+{
+for(int i=0;i<n;i++)
+{
+for(int j=0;j<(n-i-1);j++)
+{
+if(arr[j]>arr[j+1])
+
+	swap(arr[j],arr[j+1]);
+}
+}
+}//For bubble sorting
+
+int main()
+{
+int a;
+printf("Enter the size of array : ");
+scanf("%d",&a);
+int arr[n];
+scan(arr[],a);
+bs(arr[],a);
+print(arr[],a);
+}
